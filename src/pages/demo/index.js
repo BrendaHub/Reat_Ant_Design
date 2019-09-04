@@ -11,7 +11,12 @@ export default class Life extends React.Component{
     // }
 
     state = {
-        count:0
+        count:0,
+        refs:{
+            name:"antd",
+            address:"_address",
+            url:"https://www.ant-loiter.com"
+        }
     }
 
     handleAdd=()=>{
@@ -27,6 +32,7 @@ export default class Life extends React.Component{
     }
 
     render(){
+        // can defined style and refrence this variable
         let style = {
             padding:50
         }
@@ -37,7 +43,8 @@ export default class Life extends React.Component{
             <button onClick={this.handleAdd}>点击一下</button>
             <button onClick={this.handleClick.bind(this)}>点击一下</button>
             <p>{this.state.count}</p>
-            <Child name={this.state.count}></Child>
+            {/**以下是一种父子组件的传值 ；  */}
+            <Child name={this.state.count} objvalue={this.state.refs}></Child>
         </div>
     }
 }

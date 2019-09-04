@@ -121,5 +121,9 @@ const menuList = [
         title: '权限设置',
         key: '/permission'
     },
+    {
+        title: 'Demo',
+        key: '/demo'
+    }
 ];
 export default menuList;

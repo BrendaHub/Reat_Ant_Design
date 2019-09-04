@@ -28,6 +28,7 @@ import Pie from './pages/echarts/pie'
 import Line from './pages/echarts/line'
 import RichText from './pages/rich'
 import Permission from './pages/permission'
+import Demo from './pages/demo' 
 export default class IRouter extends React.Component{
 
     render(){
@@ -67,6 +68,7 @@ export default class IRouter extends React.Component{
                                     <Route path="/charts/line" component={Line} />
                                     <Route path="/rich" component={RichText} />
                                     <Route path="/permission" component={Permission} />
+                                    <Route path="/demo" component={Demo}/>
                                     <Redirect to="/home" />
                                     <Route component={NoMatch} />
                                 </Switch>

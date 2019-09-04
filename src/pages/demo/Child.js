@@ -36,6 +36,8 @@ export default class Child extends React.Component {
         return <div>
             <p>这里是子组件，测试子组件的生命周期</p>
             <p>{this.props.name}</p>
+            <p>{this.props.objvalue.name}:{this.props.objvalue.address}</p>
+            <a href={this.props.objvalue.url} target="_blank">ant-loiter.com</a>
         </div>
     }
 }
